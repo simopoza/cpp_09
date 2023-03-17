@@ -16,16 +16,16 @@ void    find_exchange_rate(std::string line, std::map<std::string,std::string> m
     value = line.substr(index + 1, line.size());
     if (!check_num(value))
         return ;
-    int i = 0;
-    while (value.size() && value[i] == ' ')
-        i++;
-    std::string num = value.substr(i, value.size());
-    std::string range = "2147483648";
-    if (num >= range)
-    {
-        std::cout << "Error: too large a number.\n";
-        return ;
-    }
+    // int i = 0;
+    // while (value.size() && value[i] == ' ')
+    //     i++;
+    // std::string num = value.substr(i, value.size());
+    // std::string range = "2147483648";
+    // if (num >= range)
+    // {
+    //     std::cout << "Error: too large a number.\n";
+    //     return ;
+    // }
     int int_value = atoi(value.c_str());
     if (!check_value(int_value))
         return ;

@@ -56,6 +56,8 @@ std::map<std::string,std::string>   create_a_map()
     std::string                         line;
 
     getline(data, line);
+    if (data.eof() == 1)
+        exit (-1);
     while (data.eof() != 1) {
         getline(data, line);
         if (!line.empty())

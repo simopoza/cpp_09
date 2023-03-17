@@ -1,5 +1,5 @@
 src = main.cpp BitcoinExchange.cpp
-cc = c++ -Wall -Wextra -Werror -std=c++98
+cc = c++ -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
 
 Btc = Btc
 
