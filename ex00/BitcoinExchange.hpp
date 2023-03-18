@@ -6,9 +6,22 @@
 #include <fstream>
 #include <map>
 
-int check_num(std::string value);
-int check_value(int value);
-int check_date(int int_year, int int_month, int int_day);
-std::map<std::string,std::string>   create_a_map();
+class Btc
+{
+    std::map<std::string,std::string>   map;
+    std::map<std::string, std::string>::iterator it;
+    public:
+        Btc();
+        Btc(const Btc& obj);
+        Btc&    operator=(const Btc& obj);
+        ~Btc();
+        //member functions.
+        void    find_exchange_rate(char *av);
+        int     check_errors(std::string date, std::string value);
+        int     check_num(std::string value);
+        int     check_value(int value);
+        int     check_date(int int_year, int int_month, int int_day);
+        void    do_it(std::string line);
+};
 
 #endif
