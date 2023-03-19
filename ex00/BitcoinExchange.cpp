@@ -120,7 +120,7 @@ int Btc::check_num(std::string value)
     {
         while (value[i] == ' ')
             i++;
-        if (value[i] == '.' || value[i] == '-' || value[i] == '+')
+        if (value[i] == '.' || value[i] == ',' || value[i] == '-' || value[i] == '+')
             i++;
         if (!isdigit(value[i]))
         {
