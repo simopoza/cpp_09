@@ -1,4 +1,4 @@
-src = main.cpp PmergeMe.cpp
+src = main_2.cpp PmergeMe_2.cpp
 cc = c++ -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
 
 PmergeMe = PmergeMe
